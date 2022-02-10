@@ -1,0 +1,80 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header-1 {
+  text-align: center;
+  color: #566;
+}
+
+.main-section {
+  background-image: url("world.png");
+  background-size: 100% 100%;
+  margin: 3%;
+  min-height: 100vh;
+}
+
+.flex-container {
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 550px;
+  height: 550px;
+  margin: auto;
+}
+
+.card {
+  font-size: 1.3em;
+  text-align: center;
+  /*flex: 0 1 auto;*/
+  width: 170px;
+  height: 170px;
+}
+
+/*  animation  */
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6%;
+  position: absolute;
+}
+
+.front {
+  background: bisque;
+  color: orangered;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: orangered;
+  color: bisque;
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.flex-container {
+  perspective: 900px;
+}
+
+
+
+
+
+
