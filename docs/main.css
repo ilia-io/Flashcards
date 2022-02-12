@@ -9,7 +9,7 @@ body {
 
 .main-section {
   background-image: url("world.png");
-  background-size: 100% 100%;
+  background-size: cover;
   margin: 3%;
   min-height: 100vh;
 }
@@ -73,6 +73,18 @@ body {
   perspective: 900px;
 }
 
+  @media screen and (max-width: 576px) {
+    .main-section {
+      background-attachment: fixed;
+    }
+    .flex-container {
+      width: 80%;
+      height: 500%;
+    }
+    .card {
+      margin-bottom: 5%;
+    }
+  }
 
 
 
