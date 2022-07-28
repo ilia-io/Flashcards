@@ -6,3 +6,4 @@ A simple project uses only HTML/CSS with flashcards, each containing a question 
 
 [Demo](https://ilia-io.github.io/Flashcards/)
 
+<img width="600" src="docs/2022-04-02_01-02-15_2.gif"/>
